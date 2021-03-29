@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Fascinate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(
+    235deg,
+    #003dfd,
+    #05c7e6,
+    #4bd58d,
+    #ff2400,
+    #e81d1d,
+    #e8b71d,
+    #e3e81d,
+    #1de840,
+    #1ddde8,
+    #2b1de8,
+    #dd00f3,
+    #dd00f3,
+    #fd8800,
+    #fd008f,
+    #9700fd
+  );
+  background-size: 1000% 1000%;
+
+  -webkit-animation: rainbow 25s ease infinite;
+  -z-animation: rainbow 25s ease infinite;
+  -o-animation: rainbow 25s ease infinite;
+  animation: rainbow 25s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-moz-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-o-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+body {
+  text-align: center;
+  padding-top: 50px;
+}
+
+h1 {
+  font-family: "Fascinate", cursive;
+  font-size: 50px;
+  color: #333;
+  text-shadow: 2px 2px 5px rgba(22, 21, 21, 0.5);
+}
+
+p {
+  position: relative;
+  text-align: center;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 20px;
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(21, 21, 21, 0.7);
+  text-shadow: 2px 2px 5px rgba(22, 21, 21, 0.5);
+}
+
+button {
+  display: inline-block;
+  padding: 0.5em 2.7em;
+  border: 0.16em solid #ffffff;
+  margin: 1em 1em 1.2em 1em;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.15s;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.5);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(5px);
+  outline: none;
+}
+
+button:hover {
+  color: rgb(17, 16, 16);
+  background-color: rgba(240, 231, 231, 0.472);
+  border-color: #dddddd;
+}
+
+button:active {
+  color: #bbbbbb;
+  border-color: #bbbbbb;
+}
+
+button span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: "\00bb";
+  position: absolute;
+  color: rgb(17, 16, 16);
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 25px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
