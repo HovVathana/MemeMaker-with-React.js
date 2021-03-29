@@ -20,3 +20,7 @@ Project is created with:
 
 #### 4: Enter 
 `yarn start` or `npm start`
+
+## Screenshot 
+![Screenshot (22)](https://user-images.githubusercontent.com/65206951/112821494-f8569600-90b0-11eb-9507-1eed27debc39.png)
+
